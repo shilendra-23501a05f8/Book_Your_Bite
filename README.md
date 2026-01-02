@@ -1,4 +1,3 @@
-<img width="2879" height="1598" alt="image" src="https://github.com/user-attachments/assets/cd78dff4-3b9a-4e63-9c66-76f91dbdc886" /># 🍽️ Book Your Bite  
 Restaurant Table Reservation System (MERN Stack)
 
 ## 📌 Overview
