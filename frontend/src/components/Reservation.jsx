@@ -4,6 +4,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
+const API = import.meta.env.VITE_API_URL;
 const Reservation = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -19,7 +20,7 @@ const Reservation = () => {
       if (!date) return;
       try {
         const { data } = await axios.get(
-          `http://localhost:4000/api/v1/reservation/booked-slots/${date}`
+          `${API}/api/v1/reservation/booked-slots/${date}`
         );
         setBookedSlots(data.bookedSlots || []);
       } catch (err) {
@@ -45,7 +46,7 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/reservation/send",
+         `${API}/api/v1/reservation/send`,
         { firstName, lastName, email, phone, date, time },
         {
           headers: { "Content-Type": "application/json" },
