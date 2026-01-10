@@ -20,7 +20,7 @@ const Reservation = () => {
       if (!date) return;
       try {
         const { data } = await axios.get(
-          `${API}/api/v1/reservation/booked-slots/${date}`
+          `${API}api/v1/reservation/booked-slots/${date}`
         );
         setBookedSlots(data.bookedSlots || []);
       } catch (err) {
@@ -46,7 +46,7 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-         `${API}/api/v1/reservation/send`,
+         `${API}api/v1/reservation/send`,
         { firstName, lastName, email, phone, date, time },
         {
           headers: { "Content-Type": "application/json" },
