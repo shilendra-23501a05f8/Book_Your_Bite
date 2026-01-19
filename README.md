@@ -49,5 +49,7 @@ The project demonstrates end-to-end MERN stack development with a focus on clean
 5. Users receive a booking confirmation
 
 ---
+### Live Link:-
+https://book-your-bite.vercel.app/
 ### Video:-
 https://drive.google.com/file/d/1XFHg9_pbtzq0KBnGJ9Dhiq_zlUcxcQwu/view?usp=sharing
